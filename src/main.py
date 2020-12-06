@@ -3,7 +3,7 @@ import sys
 
 from flask import Flask, render_template, request
 
-sys.path.append('./')
+sys.path.append('../')
 from src.vbe_fci.fci import fci_util
 
 app = Flask(__name__)
