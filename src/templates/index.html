@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VBE and FCI</title>
+</head>
+<body>
+        <h1>Variable byte encoding and front coding</h1>
+
+        <h2>Front Coding</h2>
+        <p>
+            Enter the string to generate the front coded index -
+        </p>
+        <form action="/" method = "POST">
+            <input type = "text"  name = "string_fci" required><br>
+            <input type = "submit" value="submit_fci_string" name = "submit" ><br>
+        </form>
+
+        {% if fci_message %}
+            <p>Front Coded String - {{ fci_message }}</p>
+        {% endif %}
+
+</body>
+</html>
