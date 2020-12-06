@@ -1,24 +1,13 @@
 import re
-
+import numpy as np
 
 def fci_util(A):
-    A = A + ' '
-    A = re.sub('[-]', ' ', A)
-    A = A.lower()
-    L = []
-    a = ''
-    for i in A:
-        # print(i)
-        if i != ' ':
-            # print(a)
-            a = a + i
-        else:
-            # print(a)
-            L.append(a)
-            a = ''
+    A = re.sub('[-]', ' ', A).lower()
+    #print(A)
+    L = A.split(" ")
     SL = list(set(L))
     SL.sort()
-    # print(SL)
+    #print(SL)
     fci = ''
     i = 0
     while i < len(SL):
@@ -27,10 +16,8 @@ def fci_util(A):
         for j in range(0, 4):
             if i + j < len(SL):
                 d.append(SL[i + j])
-        minl = len(d[0])
-        for k in d:
-            if minl > len(k):
-                minl = len(k)
+        print(d)
+        minl = np.min([len(i) for i in d])
         nct = 0
         ct = ''
         for m in range(0, minl):
@@ -50,21 +37,24 @@ def fci_util(A):
             d[n] = d[n][nct:]
 
         ct = str(len(d[0]) + len(ct)) + ct
-        for q in range(0, len(d)):
-            if q == 0:
-                # print(d)
-                ct = ct + '*' + d[q] + str(len(d[q + 1]))
-            else:
-                if q + 1 < len(d):
-                    ct = ct + '<>' + d[q] + str(len(d[q + 1]))
+        #print(ct)
+        if len(d) > 1:
+            for q in range(0, len(d)):
+                if q == 0:
+                    #print(d)
+                    ct = ct + '*' + d[q] + str(len(d[q + 1]))
                 else:
-                    ct = ct + '<>' + d[q]
+                    if q + 1 < len(d):
+                        ct = ct + '<>' + d[q] + str(len(d[q + 1]))
+                    else:
+                        ct = ct + '<>' + d[q]
         fci = fci + ct
+        print('Fci = ', fci)
         i = i + 4
 
     return fci
 
 
 if __name__ == "__main__":
-    A = "Stream streaming streamed Streamer"
+    A = "creme creming cremated cremlin cromo"
     print(fci_util(A))
