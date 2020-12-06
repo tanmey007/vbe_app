@@ -5,19 +5,27 @@ from flask import Flask, render_template, request
 
 sys.path.append('../')
 from src.vbe_fci.fci import fci_util
+from src.vbe_fci.vbe import vbe_util
 
 app = Flask(__name__)
 
 
 @app.route('/', methods=['post', 'get'])
 def index():
+    fci_text = ''
     fci_message = ''
+    vbe_text = ''
+    vbe_message = ''
     if request.method == 'POST':
         if request.form['submit'] == 'submit_fci_string':
-            text = request.form['string_fci']
-            fci_message = fci_util(text)
+            fci_text = request.form['string_fci']
+            fci_message = fci_util(fci_text)
 
-    return render_template('index.html', fci_message=fci_message)
+        if request.form['submit'] == 'submit_vbe_string':
+            vbe_text = request.form['string_vbe']
+            vbe_message = vbe_util(vbe_text)
+    return render_template('index.html', fci_text = fci_text, fci_message=fci_message,
+                           vbe_text = vbe_text, vbe_message = vbe_message)
 
 
 '''

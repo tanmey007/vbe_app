@@ -17,7 +17,22 @@
         </form>
 
         {% if fci_message %}
+            <p>Original String - {{ fci_text }}</p>
             <p>Front Coded String - {{ fci_message }}</p>
+        {% endif %}
+
+        <h2>Variable Byte Encoding</h2>
+        <p>
+            Enter the postings list (comma separated)
+        </p>
+        <form action="/" method = "POST">
+            <input type = "text"  name = "string_vbe" required><br>
+            <input type = "submit" value="submit_vbe_string" name = "submit" ><br>
+        </form>
+
+        {% if vbe_message %}
+            <p>Original postings list - {{ vbe_text }}</p>
+            <p>Variable byte encoded string - {{ vbe_message }}</p>
         {% endif %}
 
 </body>
