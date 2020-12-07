@@ -1,7 +1,7 @@
 import os
 import sys
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 
 sys.path.append('../')
 from src.vbe_fci.fci import fci_util
@@ -24,8 +24,8 @@ def index():
         if request.form['submit'] == 'submit_vbe_string':
             vbe_text = request.form['string_vbe']
             vbe_message = vbe_util(vbe_text)
-    return render_template('index.html', fci_text = fci_text, fci_message=fci_message,
-                           vbe_text = vbe_text, vbe_message = vbe_message)
+    return render_template('index.html', fci_text=fci_text, fci_message=fci_message,
+                           vbe_text=vbe_text, vbe_message=vbe_message)
 
 
 '''
