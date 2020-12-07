@@ -1,6 +1,6 @@
 # vbe_app
 
-## Dependencies
+## Requirements
 -Flask for python
 
 ## File Structure
