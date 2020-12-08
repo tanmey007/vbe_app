@@ -24,9 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53aba3d-0c17-4f6f-b0b5-a90534728c5e" name="Default Changelist" comment="Added static files">
+    <list default="true" id="b53aba3d-0c17-4f6f-b0b5-a90534728c5e" name="Default Changelist" comment="Updated index file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607359326373</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated index file">
+      <created>1607362439340</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607362439340</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,29 +269,30 @@
     <MESSAGE value="Updated fci code" />
     <MESSAGE value="Added content to index file" />
     <MESSAGE value="Added static files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added static files" />
+    <MESSAGE value="Updated index file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated index file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607226385141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="518" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1607226385141" />
-    <state width="1515" height="174" key="GridCell.Tab.0.bottom" timestamp="1607360074638">
+    <state width="1515" height="174" key="GridCell.Tab.0.bottom" timestamp="1607367143662">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607360074638" />
-    <state width="1515" height="174" key="GridCell.Tab.0.center" timestamp="1607360074637">
+    <state width="1515" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607367143662" />
+    <state width="1515" height="174" key="GridCell.Tab.0.center" timestamp="1607367143661">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607360074637" />
-    <state width="1515" height="174" key="GridCell.Tab.0.left" timestamp="1607360074637">
+    <state width="1515" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607367143661" />
+    <state width="1515" height="174" key="GridCell.Tab.0.left" timestamp="1607367143661">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607360074637" />
-    <state width="1515" height="174" key="GridCell.Tab.0.right" timestamp="1607360074638">
+    <state width="1515" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607367143661" />
+    <state width="1515" height="174" key="GridCell.Tab.0.right" timestamp="1607367143661">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607360074638" />
+    <state width="1515" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607367143661" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1607234065441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -301,10 +309,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607234065441" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607359331961">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607362441343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607359331961" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607362441343" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607361172541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

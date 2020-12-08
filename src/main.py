@@ -1,6 +1,7 @@
 import os
 import sys
-
+import webbrowser
+from threading import Timer
 from flask import Flask, render_template, request, url_for
 
 sys.path.append('../')
@@ -36,6 +37,11 @@ def result():
         return render_template("result.html", result=fci_result)
 '''
 
+
+def open_browser():
+    webbrowser.open_new('http://127.0.0.1:5000/')
+
 if __name__ == '__main__':
     # print(os.path.dirname(os.path.realpath(__file__)))
-    app.run(debug=True)
+    Timer(1, open_browser).start();
+    app.run(port=5000)
